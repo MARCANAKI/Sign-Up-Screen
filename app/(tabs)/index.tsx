@@ -1,75 +1,133 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import React from 'react';
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 
-export default function HomeScreen() {
+const App = () => {
+  
+   
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12',
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          {`Tap the Explore tab to learn more about what's included in this starter app.`}
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          {`When you're ready, run `}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+
+
+    <View style={styles.container}>
+      <Text style={styles.SignUpText}>Sign Up</Text>
+      <Text style={styles.UsernameText}>Username</Text>
+      <TextInput style={styles.UsernameInput}
+      />
+      <Text style={styles.EmailText}>Email</Text>
+      <TextInput style={styles.EmailInput}/>
+      <Text style={styles.PasswordText}>Password</Text>
+      <TextInput style={styles.PasswordInput}/>
+      <Text style={styles.AccountText}> Already have an account?</Text>
+      <Pressable style={styles.SignUpButton}>
+      <Text style={styles.SignUpButtonText} >Sign Up</Text>
+      </Pressable>
+
+    
+      
+    </View>
   );
-}
+};
+
+
+export default App;
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
+container: {
+  flex: 1,
+  backgroundColor: 'black'
+  
   },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
+  SignUpText: {
+    padding: 10,
+    color: 'white',
+    fontSize: 22,
+    marginLeft: 10,
+    textAlign: 'left',
+    marginTop: 180,
+    fontFamily: 'Poppins'
+    
   },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  UsernameText: {
+    padding: 5,
+    color: 'white',
+    fontSize: 16,
+    marginLeft: 10,
+    textAlign: 'left',
+    marginTop: 150,
+    fontFamily: 'Poppins'
+    
   },
-});
+  UsernameInput: {
+    padding: 10,
+    width: '80%',
+    backgroundColor: 'gray',
+    marginLeft: 10,
+    marginRight: 30,
+    marginTop: 5,
+    borderRadius: 10,
+  },
+  EmailText: {
+    padding: 5,
+    color: 'white',
+    fontSize: 15,
+    marginLeft: 10,
+    textAlign: 'left',
+    marginTop: 20,
+    fontFamily: 'Poppins'
+  },
+  EmailInput: {
+    padding: 10,
+    width: '80%',
+    backgroundColor: 'gray',
+    marginLeft: 10,
+    marginRight: 10,
+    borderRadius: 10,
+    
+  },
+  PasswordText: {
+    padding: 5,
+    color: 'white',
+    fontSize: 15,
+    marginLeft: 10,
+    textAlign: 'left',
+    marginTop: 20,
+    fontFamily: 'Poppins'
+  },
+  PasswordInput: {
+    padding: 10,
+    width: '80%',
+    backgroundColor: 'gray',
+    marginLeft: 10,
+    marginRight: 10,
+    borderRadius: 10,
+    borderWidth: 3,
+    borderColor: '#FFA500'
+  },
+  AccountText: {
+    color: 'white',
+    padding: 1,
+    fontSize: 15,
+    marginLeft: 10,
+    textAlign: 'left',
+    marginTop: 20,
+    fontFamily: 'Poppins',
+  },
+  SignUpButton: {
+    padding: 10,
+    width: '80%',
+    backgroundColor: '#FFA300',
+    marginTop: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    textAlign: 'center',
+    borderRadius: 10, 
+  },
+  SignUpButtonText: {
+    fontSize: 20,
+    color: 'black',
+    textAlign: 'center',
+    fontFamily: 'Poppins',
+  },
+ 
+})
