@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-
+import logo from '/assets/imag hjvhjes/logo.png';
 
 const App = () => {
   
@@ -10,7 +10,7 @@ const App = () => {
 
 
     <View style={styles.container}>
-      <Text style={styles.SignUpText}>Sign Up</Text>
+      <Text style={styles.SignUpText}>Sign Up<  /Text>
       <Text style={styles.UsernameText}>Username</Text>
       <TextInput style={styles.UsernameInput}
       />
@@ -35,7 +35,7 @@ export default App;
 const styles = StyleSheet.create({
 container: {
   flex: 1,
-  backgroundColor: 'black'
+  backgroundColor: 'white'
   
   },
   SignUpText: {
