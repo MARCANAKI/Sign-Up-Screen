@@ -1,8 +1,9 @@
 import React from 'react';
-import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import logo from '/assets/imag hjvhjes/logo.png';
+import { Image, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 const App = () => {
+
+  const logo = require('../../assets/images/logo.png');
   
    
 
@@ -10,7 +11,8 @@ const App = () => {
 
 
     <View style={styles.container}>
-      <Text style={styles.SignUpText}>Sign Up<  /Text>
+      <Image source={logo} style={styles.image}></Image>
+      <Text style={styles.SignUpText}>Sign Up</Text>
       <Text style={styles.UsernameText}>Username</Text>
       <TextInput style={styles.UsernameInput}
       />
@@ -36,8 +38,14 @@ const styles = StyleSheet.create({
 container: {
   flex: 1,
   backgroundColor: 'white'
-  
   },
+image: {
+ flex: 1,
+ width: 116,
+ height: 49,
+ marginTop: 37,
+
+},
   SignUpText: {
     padding: 10,
     color: 'white',
