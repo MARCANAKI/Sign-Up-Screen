@@ -11,7 +11,7 @@ const App = () => {
 
 
     <View style={styles.container}>
-      <Image source={logo} style={styles.image} resizeMode='contain' />
+      <Image source={logo} style={styles.image} resizeMode='contain'/>
       <Text style={styles.SignUpText}>Sign Up</Text>
       <Text style={styles.UsernameText}>Username</Text>
       <TextInput style={styles.UsernameInput}
@@ -20,7 +20,7 @@ const App = () => {
       <TextInput style={styles.EmailInput}/>
       <Text style={styles.PasswordText}>Password</Text>
       <TextInput style={styles.PasswordInput}/>
-      <Text style={styles.AccountText}> Already have an account?</Text>
+      <Text style={styles.AccountText}> Already have an account? <Text style={styles.LogInButton}>Login</Text></Text>
       <Pressable style={styles.SignUpButton}>
       <Text style={styles.SignUpButtonText} >Sign Up</Text>
       </Pressable>
@@ -120,6 +120,9 @@ image: {
     textAlign: 'left',
     paddingTop: 30,
     fontFamily: 'Poppins',
+  },
+  LogInButton: {
+    color:  '#FFA300'
   },
   SignUpButton: {
     padding: 16,
