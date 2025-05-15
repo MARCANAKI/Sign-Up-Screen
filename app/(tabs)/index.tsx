@@ -40,10 +40,10 @@ container: {
   backgroundColor: 'black'
   },
 image: {
- width: 140,
+ width: 116,
  resizeMode: 'contain',
- marginLeft: 10,
- marginTop: 20,
+ marginLeft: 60,
+ marginTop: 97,
 
 },
   SignUpText: {
@@ -67,7 +67,7 @@ image: {
     
   },
   UsernameInput: {
-    padding: 10,
+    padding: 16,
     width: '80%',
     backgroundColor: 'gray',
     marginLeft: 40,
@@ -78,14 +78,14 @@ image: {
   EmailText: {
     padding: 5,
     color: 'white',
-    fontSize: 15,
+    fontSize: 16,
     marginLeft: 40,
     textAlign: 'left',
     marginTop: 10,
     fontFamily: 'Poppins'
   },
   EmailInput: {
-    padding: 10,
+    padding: 16,
     width: '80%',
     backgroundColor: 'gray',
     marginLeft: 40,
@@ -96,14 +96,14 @@ image: {
   PasswordText: {
     padding: 5,
     color: 'white',
-    fontSize: 15,
+    fontSize: 16,
     marginLeft: 40,
     textAlign: 'left',
     marginTop: 10,
     fontFamily: 'Poppins'
   },
   PasswordInput: {
-    padding: 10,
+    padding: 16,
     width: '80%',
     backgroundColor: 'gray',
     marginLeft: 40,
@@ -115,21 +115,21 @@ image: {
   AccountText: {
     color: 'white',
     padding: 1,
-    fontSize: 15,
+    fontSize: 14,
     marginLeft: 40,
     textAlign: 'left',
-    paddingTop: 10,
+    paddingTop: 30,
     fontFamily: 'Poppins',
   },
   SignUpButton: {
-    padding: 10,
+    padding: 16,
     width: '80%',
     backgroundColor: '#FFA300',
     marginLeft: 40,
     marginRight: 10,
     textAlign: 'center',
     borderRadius: 10,
-    marginTop: 10, 
+    marginTop: 30, 
   },
   SignUpButtonText: {
     fontSize: 20,
