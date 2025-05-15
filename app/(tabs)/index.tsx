@@ -70,8 +70,7 @@ image: {
     padding: 16,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 40,
-    marginRight: 30,
+    alignSelf: 'center',
     marginTop: 2,
     borderRadius: 10,
   },
@@ -88,8 +87,7 @@ image: {
     padding: 16,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 40,
-    marginRight: 10,
+    alignSelf: 'center',
     borderRadius: 10,
     
   },
@@ -106,11 +104,10 @@ image: {
     padding: 16,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 40,
-    marginRight: 10,
     borderRadius: 10,
     borderWidth: 3,
-    borderColor: '#FFA500'
+    borderColor: '#FFA500',
+    alignSelf: 'center'
   },
   AccountText: {
     color: 'white',
@@ -126,13 +123,13 @@ image: {
   },
   SignUpButton: {
     padding: 16,
-    width: '80%',
     backgroundColor: '#FFA300',
-    marginLeft: 40,
-    marginRight: 10,
+    alignItems: 'stretch',
     textAlign: 'center',
+    width: "80%",
     borderRadius: 10,
-    marginTop: 30, 
+    marginTop: 30,
+    alignSelf: 'center'
   },
   SignUpButtonText: {
     fontSize: 20,
