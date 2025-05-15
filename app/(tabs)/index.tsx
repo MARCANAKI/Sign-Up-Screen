@@ -11,7 +11,7 @@ const App = () => {
 
 
     <View style={styles.container}>
-      <Image source={logo} style={styles.image}/>
+      <Image source={logo} style={styles.image} resizeMode='contain' />
       <Text style={styles.SignUpText}>Sign Up</Text>
       <Text style={styles.UsernameText}>Username</Text>
       <TextInput style={styles.UsernameInput}
@@ -40,7 +40,6 @@ container: {
   backgroundColor: 'black'
   },
 image: {
- flex: 1,
  width: 140,
  resizeMode: 'contain',
  marginLeft: 10,
@@ -51,7 +50,7 @@ image: {
     padding: 10,
     color: 'white',
     fontSize: 22,
-    marginLeft: 10,
+    marginLeft: 40,
     textAlign: 'left',
     marginTop: 50,
     fontFamily: 'Poppins'
@@ -61,9 +60,9 @@ image: {
     padding: 5,
     color: 'white',
     fontSize: 16,
-    marginLeft: 10,
+    marginLeft: 40,
     textAlign: 'left',
-    marginTop: 20,
+    marginTop: 60,
     fontFamily: 'Poppins'
     
   },
@@ -71,25 +70,25 @@ image: {
     padding: 10,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 10,
+    marginLeft: 40,
     marginRight: 30,
-    marginTop: 20,
+    marginTop: 2,
     borderRadius: 10,
   },
   EmailText: {
     padding: 5,
     color: 'white',
     fontSize: 15,
-    marginLeft: 10,
+    marginLeft: 40,
     textAlign: 'left',
-    marginTop: 40,
+    marginTop: 10,
     fontFamily: 'Poppins'
   },
   EmailInput: {
     padding: 10,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 10,
+    marginLeft: 40,
     marginRight: 10,
     borderRadius: 10,
     
@@ -98,7 +97,7 @@ image: {
     padding: 5,
     color: 'white',
     fontSize: 15,
-    marginLeft: 10,
+    marginLeft: 40,
     textAlign: 'left',
     marginTop: 10,
     fontFamily: 'Poppins'
@@ -107,7 +106,7 @@ image: {
     padding: 10,
     width: '80%',
     backgroundColor: 'gray',
-    marginLeft: 10,
+    marginLeft: 40,
     marginRight: 10,
     borderRadius: 10,
     borderWidth: 3,
@@ -117,20 +116,20 @@ image: {
     color: 'white',
     padding: 1,
     fontSize: 15,
-    marginLeft: 10,
+    marginLeft: 40,
     textAlign: 'left',
-    marginTop: 20,
+    paddingTop: 10,
     fontFamily: 'Poppins',
   },
   SignUpButton: {
     padding: 10,
     width: '80%',
     backgroundColor: '#FFA300',
-    marginTop: 100,
-    marginLeft: 10,
+    marginLeft: 40,
     marginRight: 10,
     textAlign: 'center',
-    borderRadius: 100, 
+    borderRadius: 10,
+    marginTop: 10, 
   },
   SignUpButtonText: {
     fontSize: 20,
