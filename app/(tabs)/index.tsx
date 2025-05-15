@@ -11,7 +11,7 @@ const App = () => {
 
 
     <View style={styles.container}>
-      <Image source={logo} style={styles.image}></Image>
+      <Image source={logo} style={styles.image}/>
       <Text style={styles.SignUpText}>Sign Up</Text>
       <Text style={styles.UsernameText}>Username</Text>
       <TextInput style={styles.UsernameInput}
@@ -37,13 +37,14 @@ export default App;
 const styles = StyleSheet.create({
 container: {
   flex: 1,
-  backgroundColor: 'white'
+  backgroundColor: 'black'
   },
 image: {
  flex: 1,
- width: 116,
- height: 49,
- marginTop: 37,
+ width: 140,
+ resizeMode: 'contain',
+ marginLeft: 10,
+ marginTop: 20,
 
 },
   SignUpText: {
@@ -52,7 +53,7 @@ image: {
     fontSize: 22,
     marginLeft: 10,
     textAlign: 'left',
-    marginTop: 180,
+    marginTop: 50,
     fontFamily: 'Poppins'
     
   },
@@ -62,7 +63,7 @@ image: {
     fontSize: 16,
     marginLeft: 10,
     textAlign: 'left',
-    marginTop: 150,
+    marginTop: 20,
     fontFamily: 'Poppins'
     
   },
@@ -72,7 +73,7 @@ image: {
     backgroundColor: 'gray',
     marginLeft: 10,
     marginRight: 30,
-    marginTop: 5,
+    marginTop: 20,
     borderRadius: 10,
   },
   EmailText: {
@@ -81,7 +82,7 @@ image: {
     fontSize: 15,
     marginLeft: 10,
     textAlign: 'left',
-    marginTop: 20,
+    marginTop: 40,
     fontFamily: 'Poppins'
   },
   EmailInput: {
@@ -99,7 +100,7 @@ image: {
     fontSize: 15,
     marginLeft: 10,
     textAlign: 'left',
-    marginTop: 20,
+    marginTop: 10,
     fontFamily: 'Poppins'
   },
   PasswordInput: {
@@ -125,11 +126,11 @@ image: {
     padding: 10,
     width: '80%',
     backgroundColor: '#FFA300',
-    marginTop: 10,
+    marginTop: 100,
     marginLeft: 10,
     marginRight: 10,
     textAlign: 'center',
-    borderRadius: 10, 
+    borderRadius: 100, 
   },
   SignUpButtonText: {
     fontSize: 20,
