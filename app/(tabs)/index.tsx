@@ -44,18 +44,18 @@ export default App;
 const styles = StyleSheet.create({
 container: {
   flex: 1,
+  padding: '10%',
   backgroundColor: 'black'
   },
 image: {
  width: 116,
  resizeMode: 'contain',
- marginLeft: 60,
+ marginTop: 30,
 
 
 },
 FirstView: {
-  marginTop: 20,
-  marginLeft: 20,
+  marginTop: 60,
 
 
 },
@@ -63,40 +63,31 @@ SecondView: {
   marginTop: -5,
 },
 ThirdView: {
-  marginBottom: 20,
+  marginTop: -5,
 },
   SignUpText: {
-    padding: 10,
     color: 'white',
     fontSize: 22,
-    marginLeft: 40,
     marginTop: 30,
     fontFamily: 'Poppins',
     
   },
   UsernameText: {
-    padding: 10,
     color: 'white',
     fontSize: 16,
-    paddingLeft: 90,
     marginTop: 15,
     fontFamily: 'Poppins'
     
   },
   UsernameInput: {
     padding: 16,
-    width: '80%',
-    backgroundColor: 'gray',
-    alignSelf: 'center',
+    backgroundColor: '#1E1E2D',
     marginTop: 2,
     borderRadius: 10,
   },
   EmailText: {
-    padding: 10,
     color: 'white',
     fontSize: 16,
-    marginLeft: 40,
-    textAlign: 'left',
     marginTop: 15,
     fontFamily: 'Poppins'
     
@@ -104,18 +95,13 @@ ThirdView: {
   
   EmailInput: {
     padding: 16,
-    width: '80%',
-    backgroundColor: 'gray',
-    alignSelf: 'center',
+    backgroundColor: '#1E1E2D',
     borderRadius: 10,
     
   },
   PasswordText: {
-    padding: 10,
     color: 'white',
     fontSize: 16,
-    marginLeft: 40,
-    textAlign: 'left',
     marginTop: 15,
     fontFamily: 'Poppins'
     
@@ -123,21 +109,16 @@ ThirdView: {
   
   PasswordInput: {
     padding: 16,
-    width: '80%',
-    backgroundColor: 'gray',
+    backgroundColor: '#1E1E2D',
     borderRadius: 10,
     borderWidth: 3,
     borderColor: '#FFA500',
-    alignSelf: 'center'
   },
   AccountText: {
-    padding: 10,
     color: 'white',
     fontSize: 16,
-    marginLeft: 40,
-    textAlign: 'left',
-    marginBottom: -30,
-    fontFamily: 'Poppins'
+    fontFamily: 'Poppins',
+    marginTop: 20,
     
   },
   
@@ -145,14 +126,12 @@ ThirdView: {
     color:  '#FFA300'
   },
   SignUpButton: {
-    padding: 16,
     backgroundColor: '#FFA300',
-    alignItems: 'stretch',
     textAlign: 'center',
-    width: "80%",
     borderRadius: 10,
-    marginTop: 90,
-    alignSelf: 'center'
+    marginTop: 20,
+    padding: 16,
+
   },
   SignUpButtonText: {
     fontSize: 20,
