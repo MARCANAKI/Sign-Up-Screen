@@ -12,14 +12,21 @@ const App = () => {
 
     <View style={styles.container}>
       <Image source={logo} style={styles.image} resizeMode='contain'/>
+      
       <Text style={styles.SignUpText}>Sign Up</Text>
-      <Text style={styles.UsernameText}>Username</Text>
-      <TextInput style={styles.UsernameInput}
-      />
-      <Text style={styles.EmailText}>Email</Text>
-      <TextInput style={styles.EmailInput}/>
-      <Text style={styles.PasswordText}>Password</Text>
-      <TextInput style={styles.PasswordInput}/>
+      <View style = {styles.FirstView}>
+        <Text style={styles.UsernameText}>Username</Text>
+        <TextInput style={styles.UsernameInput}/>
+      </View>
+
+      <View style = {styles.SecondView}>
+        <Text style={styles.EmailText}>Email</Text>
+        <TextInput style={styles.EmailInput}/>
+      </View>
+      <View style = {styles.ThirdView}>
+        <Text style={styles.PasswordText}>Password</Text>
+        <TextInput style={styles.PasswordInput}/>
+      </View>
       <Text style={styles.AccountText}> Already have an account? <Text style={styles.LogInButton}>Login</Text></Text>
       <Pressable style={styles.SignUpButton}>
       <Text style={styles.SignUpButtonText} >Sign Up</Text>
@@ -43,26 +50,36 @@ image: {
  width: 116,
  resizeMode: 'contain',
  marginLeft: 60,
- marginTop: 97,
 
+
+},
+FirstView: {
+  marginTop: 20,
+  marginLeft: 20,
+
+
+},
+SecondView: {
+  marginTop: -5,
+},
+ThirdView: {
+  marginBottom: 20,
 },
   SignUpText: {
     padding: 10,
     color: 'white',
     fontSize: 22,
     marginLeft: 40,
-    textAlign: 'left',
-    marginTop: 50,
-    fontFamily: 'Poppins'
+    marginTop: 30,
+    fontFamily: 'Poppins',
     
   },
   UsernameText: {
-    padding: 5,
+    padding: 10,
     color: 'white',
     fontSize: 16,
-    marginLeft: 40,
-    textAlign: 'left',
-    marginTop: 60,
+    paddingLeft: 90,
+    marginTop: 15,
     fontFamily: 'Poppins'
     
   },
@@ -75,14 +92,16 @@ image: {
     borderRadius: 10,
   },
   EmailText: {
-    padding: 5,
+    padding: 10,
     color: 'white',
     fontSize: 16,
     marginLeft: 40,
     textAlign: 'left',
-    marginTop: 10,
+    marginTop: 15,
     fontFamily: 'Poppins'
+    
   },
+  
   EmailInput: {
     padding: 16,
     width: '80%',
@@ -92,14 +111,16 @@ image: {
     
   },
   PasswordText: {
-    padding: 5,
+    padding: 10,
     color: 'white',
     fontSize: 16,
     marginLeft: 40,
     textAlign: 'left',
-    marginTop: 10,
+    marginTop: 15,
     fontFamily: 'Poppins'
+    
   },
+  
   PasswordInput: {
     padding: 16,
     width: '80%',
@@ -110,14 +131,16 @@ image: {
     alignSelf: 'center'
   },
   AccountText: {
+    padding: 10,
     color: 'white',
-    padding: 1,
-    fontSize: 14,
+    fontSize: 16,
     marginLeft: 40,
     textAlign: 'left',
-    paddingTop: 30,
-    fontFamily: 'Poppins',
+    marginBottom: -30,
+    fontFamily: 'Poppins'
+    
   },
+  
   LogInButton: {
     color:  '#FFA300'
   },
@@ -128,7 +151,7 @@ image: {
     textAlign: 'center',
     width: "80%",
     borderRadius: 10,
-    marginTop: 30,
+    marginTop: 90,
     alignSelf: 'center'
   },
   SignUpButtonText: {
